@@ -12,5 +12,10 @@ export default defineConfig({
     host: '0.0.0.0', 
     port: parseInt(process.env.PORT) || 5173, 
     strictPort: true 
-  }
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: parseInt(process.env.PORT) || 5173,
+    allowedHosts: ['claim-frontend-zizi.onrender.com'], 
+  },
 })
